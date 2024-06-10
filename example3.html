@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        div {
+            width: 50%;
+            display: flex;
+            margin: auto;
+            align-items: center;
+        }
+
+        table {
+            background-color: rgb(222, 187, 187);
+        }
+
+        img {
+            position: relative;
+            top: 46px;
+            border-top-left-radius:20px ;
+            border-bottom-left-radius:20px ;
+            box-shadow: 10px 10px 10px 10px black;
+        }
+        input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        input[type="submit"]{
+            background-color: black;
+            color: white;
+        }
+        .main{
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <img src="image/image2.jpg" style="align-items: center;width: 300px; height: 400px;">
+
+        <form>
+            <table style="align-items: center;width: 300px; height: 400px;">
+                <tr>
+                    <th style="color:white;">Registration info</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="First Name"></input></td>
+                </tr><br>
+                <tr>
+                    <td><input type="text" placeholder="Address"></input></td>
+                </tr><br>
+                <tr>
+                    <td><input type="text" placeholder="Zip Code"></input></td>
+                </tr><br>
+                <tr>
+                    <td><select>
+                            <option>state</option>
+                            <option>kerala</option>
+                            <option>karnataka</option>
+                            <option>tamilnadu</option>
+                        </select></td>
+                </tr><br>
+                <tr>
+                    <td><input type="text" placeholder="Username(6-8 charecters)"></input></td>
+                </tr><br>
+                <tr>
+                    <td><input type="email" placeholder="Email"><br>
+                        </input></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="center">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+<div style="height: 200px;width: 200px;margin-left: 50px;background-color: aqua;" class="main">helo</div>
+
+</body>
+
+</html>
