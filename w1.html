@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(w1bg.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+
+        .div1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .div1sub1 {
+            display: flex;
+            color: darkorange;
+        }
+
+        .div1sub2 ul {
+            display: flex;
+            list-style-type: none;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .div1sub2 ul a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .div2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 250px;
+        }
+
+        .div2sub1 {
+            color: azure;
+        }
+
+        .div2sub1 h1 {
+            font-size: 60px;
+        }
+
+        .div2sub2:hover {
+            color: darkorange;
+        }
+
+        .div2sub2 img {
+            border-radius: 50%;
+            animation: rotation 10s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .button {
+            background-color: transparent;
+            color: azure;
+            font-size: 15px;
+            border: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: blueviolet;
+            min-width: 130px;
+            z-index: -1;
+        }
+
+        .dropdown-content a {
+            padding: 12px;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <div class="div1sub1">
+                <h1>Restoran</h1>
+            </div>
+            <div class="div1sub2">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="button">PAGE<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg></button>
+                            <div class="dropdown-content">
+                                <a href="">Booking</a>
+                                <a href="">Our Team</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">CONTACTS</a></li>
+
+                    <button
+                        style="background-color: rgb(255, 107, 1);color: azure;border:none ;height: 60px;width: 150px;">BOOK
+                        A TABLE</button>
+                </ul>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="div2sub1">
+                <h1>Enjoy Our<br>Delicious meal</h1><br>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                    Aliqu diam amet diam et <br>eos. Clita erat ipsum et lorem et sit,
+                    sed stet lorem sit clita duo justo magna dolore<br> erat amet</p><br>
+                <button
+                    style="background-color: rgb(255, 107, 1);color:azure;border:none ;height: 60px;width: 150px;">BOOK
+                    A TABLE</button>
+            </div>
+            <div class="div2sub2">
+                <img style="height:500px;width:500px;margin-top:110px ;" src="w1image.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
