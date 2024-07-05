@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .d1s2 ul {
+            display: flex;
+            list-style-type: none;
+            gap: 15px;
+        }
+
+        .d1s2 ul a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .d2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .d2s1{
+            flex: 50%;
+        }
+        .d2s1 h1,h3{
+            display: flex;
+            justify-content: center;
+        }
+        .d2s2{
+            flex: 50%;
+        }
+
+        .d3sub1 {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+        }
+
+        .d3s1 {
+            background-color: chocolate;
+            align-items: center;
+
+        }
+
+        .d3s2 {
+            background-color: blue;
+            align-items: center;
+
+        }
+
+        .d3s3 {
+            background-color: chocolate;
+            align-items: center;
+
+        }
+        .d4{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .d1s2 a:hover {
+      background-color:brown;
+      color:azure;
+    }
+    .d1s1{
+        display: flex;
+        align-items: center;
+    }
+    .d4{
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <div class="d1s1">
+            <img src="class1.png">
+            <h1>SBS</h1>
+        </div>
+        <div class="d1s2">
+            <ul>
+                <li><a href="" style="background-color: rgb(193, 10, 10);color: azure;">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SKATTING</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="d1s3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+                viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 
+                    1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+        </div>
+    </div>
+    <div class="d2">
+        <div class="d2s1">
+            <h1>Skatting<br>Board<br>School</h1>
+            <h3>READ MORE</h3>
+        </div>
+        <div class="d2s2">
+            <img src="skatting1.png" width="70%">
+        </div>
+    </div>
+    <div class="d3">
+        <h1>Our Skatting Class</h1>
+        <h3>There are many variations of passages of Lorem</h3>
+        <div class="div3sub1">
+            <div class="d3s1">
+                <img src="class1.png">
+                <h2>Skateboard</h2>
+                <h4>There are many variations of<br>
+                    passages of Lorem Ipsum <br>
+                    available, but the majority have <br>
+                    suffered alteration There are<br>
+                    many variations</h4>
+            </div>
+            READ MORE
+            <div class="d3s2">
+                <img src="class2.png">
+                <h2>Skateboard</h2>
+                <h4>There are many variations of<br>
+                    passages of Lorem Ipsum <br>
+                    available, but the majority have <br>
+                    suffered alteration There are<br>
+                    many variations</h4>
+            </div>
+            READ MORE
+            <div class="d3s3">
+                <img src="class3.png">
+                <h2>Skateboard</h2>
+                <h4>There are many variations of<br>
+                    passages of Lorem Ipsum <br>
+                    available, but the majority have <br>
+                    suffered alteration There are<br>
+                    many variations</h4>
+            </div>
+            READ MORE
+        </div>
+    </div>
+    <div class="d4">
+        <div>
+            <h1>About<br>
+                Skating<br>
+                school</h1>
+            <h4>There are many variations of passages of Lorem Ipsum available,<br>
+                 but the majority have suffered alterationThere are many<br>
+                 variatioThere are many variations of passages of Lorem Ipsum <br>
+                 available, but the majority have suffered alteration There <br>
+                 are many variationsns
+
+            </h4>
+        </div>
+        <div>
+            <img src="class4.png" width="70%">
+        </div>
+    </div>
+</body>
+</html>

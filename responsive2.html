@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            text-align: center;
+            background-color: rgb(14, 23, 0);
+            color: azure;
+            padding: 10%;
+        }
+
+        .div2 {
+            display: flex;
+            background-color: rgb(164, 164, 249);
+        }
+
+        .div2 a {
+            color: azure;
+            text-decoration: none;
+            padding: 3%;
+            text-align: center;
+        }
+
+        .div2 a:hover {
+            background-color: rgb(244, 251, 251);
+            color: rgb(0, 0, 0);
+        }
+
+        .div3 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .div4 {
+            flex: 20%;
+            background-color: rgb(204, 156, 249);
+            padding: 15px;
+        }
+
+        .div5 {
+            flex: 80%;
+            background-color: rgb(173, 246, 246);
+            padding: 15px;
+        }
+
+        .img {
+            background-color: rgb(249, 183, 159);
+            width: 100%;
+            text-align: center;
+
+
+        }
+
+        @media screen and (max-width:600px) {
+
+            .div1,
+            .div2 {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1>WEBSITE</h1>
+    </div>
+    <div class="div2">
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+        <a href="">Link3</a>
+        <a href="">Link4</a>
+
+    </div>
+    <div class="div3">
+        <div class="div4">
+            <h3>ABOUT</h3>
+            <h5>photo:</h5>
+            <div class="img" style="height:200px;width: 200px;">IMAGE</div>
+            <P>text , images, about and photos</P>
+            <h3>TEXT</h3>
+            <p>text , images, about and photos</p>
+            <div class="img" style="height:50px;">Image</div><br>
+            <div class="img" style="height:50px;">Image</div><br>
+        </div>
+        <div class="div5">
+            <h2>HEADING</h2>
+            <h5>description</h5>
+            <div class="img" style="height:200px;">IMAGE</div>
+            <p>TEXT</p>
+            <p> text, images, about and photos</p>
+            <br>
+            <h2>HEADING</h2>
+            <h5>description</h5>
+            <div class="img" style="height:200px;">IMAGE</div>
+            <p>TEXT</p>
+            <p> text, images, about and photos</p>
+        </div>
+    </div>
+</body>
+
+</html>

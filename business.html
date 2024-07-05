@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .div1 {
+            display: flex;
+            background-color: blue;
+            justify-content: space-around;
+        }
+
+        @media(max-width:1100px) {
+            .div1sub2 ul {
+                flex-direction: column;
+            }
+        }
+
+        @media(max-width:900px) {
+            .div1 {
+                flex-direction: column;
+            }
+        }
+
+        .div1sub1 {
+            display: flex;
+            align-items: center;
+            color: azure;
+        }
+
+        .div1sub2 ul {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .div1sub2 ul a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        .div2 {
+            display: flex;
+            background-color: blue;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        @media (max-width:900px) {
+            .div2 {
+                flex-direction: column;
+            }
+
+            .div2sub2 {
+                padding: 20px;
+            }
+        }
+
+        .div3 {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        @media (max-width:900px) {
+            .div3 {
+                flex-direction: column;
+            }
+            .div3sub1 {
+                padding: 20px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div1sub1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill"
+                viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
+            </svg>&nbsp;
+            <h3>Business</h3>
+        </div>
+        <div class="div1sub2">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="div2sub1">
+            <h1>Corporate & Business Site<br>
+                Template</h1><br>
+            <p>business agency that helps brands to achieve their business outcomes</p><br>
+            <button>get started</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+            </svg>watch intro
+        </div>
+        <div class="div2sub2"><img src="image/b1image.jpg" height="95%" width="50%"></div>
+    </div>
+    <div class="div3">
+        <div class="div3sub1"><img src="image/b2image.jpg" height="85%" width="50%"></div>
+        <div class="div3sub2">
+            <h4>--our story</h4><br><br>
+            <h2>our team comes with the experience and knowledge</h2><br>
+            <div class="div3sub2s1" style="background-color:gray;">
+                <button>who we are</button>
+                <button>our vision</button>
+                <button>our history</button>
+            </div><br>
+            <p>it is a long establishment fact that a reader will be <br>
+                distracted by the readable content of a page when <br>
+                looking at its layout</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            text-align: center;
+        }
+
+        .div2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .div3 {
+            flex: 25%;
+            padding: 2px;
+        }
+        @media screen and (max-width: 900px) {
+            .div3 {
+                flex: 50%;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .div3 {
+                flex: 100%;
+            }
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <h1>IMAGES</h1>
+    </div>
+    <div class="div2">
+        <div class="div3">
+            <img src="image/image1.jpg" style="width:100%">
+            <img src="image/image3.jpg" style="width:100%">
+            <img src="image/image4.jpg" style="width:100%">
+            <img src="image/image6.jpg" style="width:100%">
+            <img src="image/image5.jpg" style="width:100%">
+            <img src="image/image7.jpg" style="width:100%">
+        </div>
+        <div class="div3">
+            <img src="image/image4.jpg" style="width:100%">
+            <img src="image/image8.jpg" style="width:100%">
+            <img src="image/image5.jpg" style="width:100%">
+            <img src="image/image7.jpg" style="width:100%">
+            <img src="image/image2.jpg" style="width:100%">
+            <img src="image/image1.jpg" style="width:100%">
+        </div>
+        <div class="div3">
+            <img src="image/image5.jpg" style="width:100%">
+            <img src="image/image1.jpg" style="width:100%">
+            <img src="image/image3.jpg" style="width:100%">
+            <img src="image/image6.jpg" style="width:100%">
+            <img src="image/image5.jpg" style="width:100%">
+            <img src="image/image4.jpg" style="width:100%">
+        </div>
+        <div class="div3">
+            <img src="image/image2.jpg" style="width:100%">
+            <img src="image/image4.jpg" style="width:100%">
+            <img src="image/image7.jpg" style="width:100%">
+            <img src="image/image5.jpg" style="width:100%">
+            <img src="image/image3.jpg" style="width:100%">
+            <img src="image/image1.jpg" style="width:100%">
+
+        </div>
+    </div>
+</body>
+
+</html>
