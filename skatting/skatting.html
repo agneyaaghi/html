@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .res {
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 900px) {
+            .res {
+                flex-direction: column;
+            }
+
+            .d1s2 ul {
+                flex-direction: column;
+            }
+
+            .d1s2 ul li {
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .d1 {
+                flex-direction: column;
+            }
+        }
+
         .d1 {
             display: flex;
             align-items: center;
@@ -44,18 +69,25 @@
             padding-top: 50px;
         }
 
+        @media screen and (max-width: 1200px) {
+            .d2 {
+                flex-direction: column;
+            }
+        }
+
         .d2s1 {
             flex: 40%;
             padding-left: 180px;
             padding-top: 80px;
         }
 
-        .d2s2 {
-            flex: 60%;
-        }
-
         .d2s1 p {
             font-size: 70px;
+            margin-left: -50%;
+        }
+
+        .d2s2 {
+            flex: 60%;
         }
 
         .d3 p {
@@ -75,6 +107,12 @@
             justify-content: center;
             gap: 25px;
             padding: 40px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .div3sub1 {
+                flex-direction: column;
+            }
         }
 
         .d3s1s1 {
@@ -106,6 +144,12 @@
             background-attachment: fixed
         }
 
+        @media screen and (max-width: 1000px) {
+            .d4 {
+                flex-direction: column;
+            }
+        }
+
         .d4s1 {
             flex: 60%;
             margin-left: 100px;
@@ -127,6 +171,12 @@
             padding: 60px 0px 0px 60px;
         }
 
+        @media screen and (max-width: 1100px) {
+            .d5sub1 {
+                flex-direction: column;
+            }
+        }
+
         .d5 h1 {
             font-size: 50px;
         }
@@ -143,6 +193,16 @@
 
         .d6 {
             display: flex;
+        }
+
+        @media screen and (max-width: 1100px) {
+            .d6 {
+                flex-direction: column;
+            }
+
+            .d6s2 {
+                padding-bottom: 10%;
+            }
         }
 
         .d6s1 {
@@ -166,43 +226,59 @@
 
         .d7 {
             background-color: #3e0bce;
-            ;
-            padding: 50px 20px 40px 20px;
+            padding: 5%;
         }
 
-        .d7 h1 {
-            font-size: 50px;
+        .d7s1 h1 {
+            font-size: 300%;
             color: azure;
-            display: flex;
             justify-content: center;
-        }
-
-        .d7sub1 {
             display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 80px;
-            margin-bottom: 50px;
-        }
-
-        .d7s1 {
-            background-color: red;
-            color: azure;
-            padding: 40px;
-            border-radius: 20px;
+            padding-bottom: 3%;
         }
 
         .d7s2 {
-            background-color: azure;
-            padding: 40px;
-            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            padding-bottom: 50px;
         }
 
-        .d7s3 {
+        @media screen and (max-width: 1000px) {
+            .d7s2 {
+                flex-direction: column;
+            }
+        }
+
+        .d7s2s1 {
             background-color: red;
+            height: 200px;
+            padding-top: 10%;
+            border-radius: 10%;
+            padding-left: 20px;
+            padding-right: 20px;
             color: azure;
-            padding: 40px;
-            border-radius: 20px;
+        }
+
+       
+        .d7s2s2 {
+            background-color: azure;
+            height: 300px;
+            padding-top: 10%;
+            border-radius: 10%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .d7s2s3 {
+            background-color: red;
+            height: 200px;
+            padding-top: 10%;
+            border-radius: 10%;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: azure;
         }
 
         .d8 {
@@ -210,11 +286,22 @@
             margin-top: 100px;
         }
 
+        @media screen and (max-width: 1100px) {
+            .d8 {
+                flex-direction: column;
+            }
+
+            .d8s1 ul li {
+                padding: 0%;
+            }
+        }
+
         .d8s1 {
             padding-left: 10%;
             flex: 30%;
             padding-bottom: 10%;
         }
+
         .d8s2 {
             flex: 70%;
             padding-left: 8%;
@@ -227,7 +314,7 @@
             padding: 5%;
         }
 
-       
+
         .d8s2s1s2 ul li {
             display: flex;
             text-decoration: none;
@@ -251,60 +338,65 @@
         .d8s2s2s1 {
             display: flex;
         }
-        .d8s2s2{
+
+        .d8s2s2 {
             display: flex;
             margin-top: 8%;
         }
-        .d8s2s1s1{
+
+        .d8s2s1s1 {
             font-size: 40px;
         }
-        .d8s2s1s2{
-            font-size:20px ;
+
+        .d8s2s1s2 {
+            font-size: 20px;
         }
-        .d8s2s2s1sub1{
+
+        .d8s2s2s1sub1 {
             font-size: 40px;
         }
-        .d8s2s2s2{
-            font-size:20px ;
 
+        .d8s2s2s2 {
+            font-size: 20px;
         }
-        .icons{
-             margin-top:2%;
-             padding-left: 5%;
-        }
-       
 
+        .icons {
+            margin-top: 2%;
+            padding-left: 5%;
+        }
     </style>
 </head>
 
 <body>
     <div class="d1">
         <div class="d1s1">
-            <img src="skatting/logo.png">
-            <h1>SBS</h1>
+            <img src="logo.png">
         </div>
-        <div class="d1s2">
-            <ul>
-                <li><a href="" style="background-color:red;
+        <div class="res">
+            <div class="d1s2">
+                <ul>
+                    <li><a href="" style="background-color:red;
                 color: azure;padding: 15px;border-radius: 20px;">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SKATTING</a></li>
-                <li><a href="">SHOP</a></li>
-                <li><a href="">CONTACT US</a></li>
-            </ul>
-        </div>
-        <div class="d1s3">
-            <div style="padding: 30px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                </svg>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SKATTING</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
             </div>
-            <div style="padding: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 
+            <div class="d1s3">
+                <div style="padding: 30px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                </div>
+                <div style="padding: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 
                     1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                </svg></div>
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
     <div class="d2">
@@ -422,27 +514,38 @@
         </div>
     </div>
     <div class="d7">
-        <h1>Testimonial</h1>
-        <div class="d7sub1">
-            <div class="d7s1">
-                <h2>Disol</h2>
-                <img src="te.png">
-                <p>humour, or randomised <br>words which don't look even<br>
-                    slightly believable. If you are</p>
+        <div class="d7s1">
+            <h1>Testimonial</h1>
+        </div>
+        <div class="d7s2">
+            <div class="d7s2sub1" style="position: relative;">
+                <img src="profile.png" width="28%" height="25%" style="position: absolute;top:-9%;left:35%;">
+                <div class="d7s2s1">
+                    <h2>Disol</h2>
+                    <img src="te.png">
+                    <p>humour, or randomised <br>words which don't look even<br>
+                        slightly believable. If you are</p>
+                </div>
             </div>
-            <div class="d7s2">
-                <h2>Jone Lo</h2>
-                <img src="te2.png">
-                <p>humour, or randomised words which don't look even<br>
-                    slightly believable. If you are going to use a passage of<br>
-                    Lorem Ipsum, you need to be sure</p>
+            <div class="d7s2sub2" style="position: relative;">
+                <img src="profile (1).png" width="25%" height="25%" style="position: absolute;top:-9%;left:35%;">
+                <div class="d7s2s2">
+                    <h2>Jone Lo</h2>
+                    <img src="te2.png">
+                    <p>humour, or randomised words which don't look even<br>
+                        slightly believable. If you are going to use a passage of<br>
+                        Lorem Ipsum, you need to be sure</p>
+                </div>
             </div>
-            <div class="d7s3">
-                <h2>Michale</h2>
-                <img src="te.png">
-                <p>humour, or randomised <br>
-                    words which don't look even <br>
-                    slightly believable. If you are</p>
+            <div class="d7s2sub3" style="position: relative;">
+                <img src="profile (2).png" width="28%" height="25%" style="position: absolute;top:-9%;left:35%;">
+                <div class="d7s2s3">
+                    <h2>Michale</h2>
+                    <img src="te.png">
+                    <p>humour, or randomised <br>
+                        words which don't look even <br>
+                        slightly believable. If you are</p>
+                </div>
             </div>
         </div>
     </div>
@@ -510,11 +613,11 @@
                         <path
                             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <a href="" style="background-color: black;padding: 10px;border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
                         class="bi bi-twitter" viewBox="0 0 16 16">
                         <path
                             d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-                    </svg>
+                    </svg></a>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-linkedin" viewBox="0 0 16 16">
                         <path
